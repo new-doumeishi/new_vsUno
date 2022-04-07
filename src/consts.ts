@@ -1,7 +1,9 @@
 import { Card } from "./interfaces/card";
 
 export const Consts = {
+    //プレイヤー人数
     NUMBER_OF_PLAYERS: 4,
+    //NPC番号
     Npc: {
         NO1: 1,
         NO2: 2,
@@ -10,11 +12,17 @@ export const Consts = {
         NAME2: 'ＮＰＣ２',
         NAME3: 'ＮＰＣ３',
     },
+    //カード関係の固定値
     Cards: {
+        //カードの表示位置
         Location: {
+            //カードが17枚以上の場合3行表示
             FIRST_LINE_START_POSITION: 17,
+            //カードが8枚上の場合9行表示
             SECOND_LINE_START_POSITION: 9,
+            //カードが8枚未満の場合1行表示
             THIRD_LINE_START_POSITION: 1,
+            //1行の表示枚数
             MAX_NUMBER_OF_CARDS_IN_LINE: 8,
             FirstCard:{
                 X_ORIGIN: 350,
@@ -50,21 +58,28 @@ export const Consts = {
             },
         },
         Name: {
+            //カードの背面の画像ファイル名
             CARD_BIHIND: 'behind_card.png',
         },
+        //カードのサイズ
         Size: {
             Normal: {
                 WIDTH: 70,
                 HEIGHT: 90,
             },
+            //場のカードは大きめに表示する
             PileCard: {
                 WIDTH: 110,
                 HEIGHT: 150,
             }
         },
+        //全カード枚数
         TOTAL_NUMBER_OF_CARDS_IN_GAME: 108,
+        //各色のカード枚数
         MAX_NUMBER_OF_EACH_COLOR: 13,
+        //初期所持のカード枚数
         NUMBER_OF_START_CARDS: 7,
+        //カードの色
         Color: {
             BLUE: 'b',
             GREEN: 'g',
@@ -72,6 +87,7 @@ export const Consts = {
             YELLOW: 'y',
             PREFIXES: ['b', 'g', 'y', 'r'],
         },
+        //カードの種類
         KIND: {
             NUMBER: 'number',
             REVERSE: 'reverse',
@@ -81,15 +97,18 @@ export const Consts = {
             WILD: 'wild',
         },
     },
+    //フォルダーのパス
     Folder: {
         CARDS: 'assets/images/',
         BUTTON: 'assets/images/buttons/',
     },
+    //画面のサイズ
     Screen: {
         WIDTH: 1000,
         HEIGHT: 1350,
         CARD_SELECT_COLOR: 0x000000,
     },
+    //ボタンのファイル名と表示位置
     Button: {
         FILE_NAMES: ['btn_draw.png', 'btn_discard.png'
             , 'btn_blue.png', 'btn_red.png', 'btn_yellow.png', 'btn_green.png'
@@ -141,10 +160,10 @@ export const Consts = {
             NAME: 'direct.png',
         }
     },
+    //フォント
     Font: {
         SIZE: 50,
         NAME: 'Arial',
-        MONEY_FONT_SIZE: 30,
     },
 };
 
